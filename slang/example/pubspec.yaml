@@ -11,15 +11,18 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  slang: ^3.16.0 # add this
-  slang_flutter: ^3.16.0 # add this
+  slang:
+    path: ../
+  slang_flutter:
+    path: ../../slang_flutter
   flutter_localizations: # add this
     sdk: flutter
 
 dev_dependencies:
   lints: ^2.0.0
-#  build_runner: any
-#  slang_build_runner: any
+  build_runner: any
+  slang_build_runner:
+    path: ../../slang_build_runner
 
 flutter:
   uses-material-design: true

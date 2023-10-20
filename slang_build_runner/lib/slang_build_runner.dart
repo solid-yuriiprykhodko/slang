@@ -26,10 +26,14 @@ class I18nBuilder implements Builder {
   final String outputFilePattern;
 
   I18nBuilder({required this.config})
-      : this.outputFilePattern = config.outputFileName.getFileExtension();
+      : this.outputFilePattern = config.outputFileName.getFileExtension() {
+    print('init');
+  }
 
   @override
   FutureOr<void> build(BuildStep buildStep) async {
+    print('build');
+
     final Glob findAssetsPattern = config.inputDirectory != null
         ? Glob('**${config.inputDirectory}/**${config.inputFilePattern}')
         : Glob('**${config.inputFilePattern}');
