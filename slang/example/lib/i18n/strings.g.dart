@@ -4,9 +4,9 @@
 /// To regenerate, run: `dart run slang`
 ///
 /// Locales: 2
-/// Strings: 12 (6 per locale)
+/// Strings: 14 (7 per locale)
 ///
-/// Built on 2023-10-20 at 22:01 UTC
+/// Built on 2023-10-20 at 22:06 UTC
 
 // coverage:ignore-file
 // ignore_for_file: type=lint
@@ -217,6 +217,8 @@ class _StringsMainScreenDe implements _StringsMainScreenEn {
 		other: 'Du hast ${n} mal gedrückt.',
 	);
 	@override String get tapMe => 'Drück mich';
+	@override String get foo => 'bar';
+	@override String get baz => 'bar';
 }
 
 /// Flat map(s) containing all translations.
@@ -247,6 +249,8 @@ extension on _StringsDe {
 				other: 'Du hast ${n} mal gedrückt.',
 			);
 			case 'mainScreen.tapMe': return 'Drück mich';
+			case 'mainScreen.foo': return 'bar';
+			case 'mainScreen.baz': return 'bar';
 			case 'locales.en': return 'Englisch';
 			case 'locales.de': return 'Deutsch';
 			default: return null;
